@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="4"
+   name=""
+   committed-date="2013-08-16T09:26:35.047000Z"
+   url="https://server.lbschina.com.cn/svn/NielsenMobile/NielsenMobile/res/menu"
+   last-author="mars.hua"
+   kind="dir"
+   uuid="039f8b3f-5bc3-314b-945d-d27fa8507d32"
+   repos="https://server.lbschina.com.cn/svn/NielsenMobile"
+   revision="4"/>
+<entry
+   committed-rev="4"
+   name="activity_main.xml"
+   text-time="2013-08-16T09:34:46.000000Z"
+   committed-date="2013-08-16T09:26:35.047000Z"
+   checksum="5e182958a79ac3bf28b7fdfcff5af938"
+   last-author="mars.hua"
+   kind="file"
+   prop-time="2013-08-16T09:34:46.000000Z"/>
+</wc-entries>

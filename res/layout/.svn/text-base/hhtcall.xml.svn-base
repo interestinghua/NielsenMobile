@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/top_back_image"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/relaAll"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="Block ID:"
+            android:textColor="#ffffffff"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/BlockIDTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="0.2"
+            android:gravity="center_vertical"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="Nlinx ID:"
+            android:textColor="#ffffffff"
+            android:textSize="14dp" />        
+        
+        <com.lbschina.srt.activity.MarqueeTextView
+            android:id="@+id/SalesIDTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="0.2"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="14dp" >
+        </com.lbschina.srt.activity.MarqueeTextView>
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/buttonhome_style"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <com.lbschina.srt.activity.MarqueeTextView
+            android:id="@+id/marquee_txt"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.8"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="16dp" >
+        </com.lbschina.srt.activity.MarqueeTextView>
+        
+        <Button
+            android:id="@+id/gotoBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"          
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/buttonhome_style"
+            android:gravity="center"
+            android:text="@string/gotoLevel"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.amap.api.maps.SupportMapFragment" />
+
+</LinearLayout>

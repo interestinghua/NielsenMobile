@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://www.iteye.com/custom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/top_back_image"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/relaAll"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/NavigateBack"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/buttonback_style"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:text="@string/title_return"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/NavigateBack"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/buttonhome_style"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textColor="#ffffffff" />
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.amap.api.maps.SupportMapFragment" />
+
+</LinearLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_navigate"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/top_back_image"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/NavigateBack"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttonback_style"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="@string/title_return"
+            android:textColor="#ffffffff"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:orientation="vertical"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical" >
+
+        <!-- 售点更新 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/city_QuanGuoJiChu"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.2"
+                android:gravity="center_vertical"
+                android:text="售点"
+                android:textColor="@color/listColor1"
+                android:textSize="17dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:orientation="vertical"
+                android:weightSum="1.0" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.9"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/SalesPointTextView"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:gravity="center"
+                        android:hint="@string/btn_download"
+                       android:visibility="gone"
+                        android:textColor="@color/listColor1"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/SalesPointTimeTextView"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="1dp"
+                        android:gravity="center"
+                        android:textColor="@color/listColor1"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/SalesPointProgressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.1"
+                    android:visibility="gone"
+                    android:max="100"
+                    android:progress="0" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/SalesPointDown"
+                android:layout_width="7dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.1"
+                android:background="@drawable/list_citymap_load"
+                android:clickable="true"
+                android:gravity="center"
+                android:textColor="@color/listColor1"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/solidline" />
+
+        <!-- 地图块更新 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
+
+            <TextView
+                android:id="@+id/citySH"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:gravity="center_vertical"
+                android:text="地图块"
+                android:textColor="@color/listColor1"
+                android:textSize="17dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:orientation="vertical"
+                android:weightSum="1.0" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.9"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/BlockTextView"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:gravity="center"
+                        android:hint="@string/btn_download"
+                        android:visibility="gone"
+                        android:textColor="@color/listColor1"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/BlockTimeTextView"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="1dp"
+                        android:gravity="center"
+                        android:textColor="@color/listColor1"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/BlockProgressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.1"
+                    android:visibility="gone"
+                    android:max="100"
+                    android:progress="0" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/BlockDown"
+                android:layout_width="7dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.1"
+                android:background="@drawable/list_citymap_load"
+                android:clickable="true"
+                android:gravity="center"
+                android:textColor="@color/listColor1"
+                android:textSize="11dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

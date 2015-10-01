@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="list_sid_color">#111111</color>
+    <color name="fontColor">#666666</color>
+    <color name="fontColor1">#FFEBCD</color>
+    <color name="listColor1">#000000</color>
+    <color name="feestatis_bkg">#dddee0</color>
+    <color name="ziti">#0d171c</color>
+
+</resources>

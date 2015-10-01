@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/paychannelsel"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/paychannel_icon"
+        android:layout_width="10dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:id="@+id/paychannel_txt"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:gravity="left"
+        android:text="00000000"
+        android:textColor="@color/ziti"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/paychannel_img_right"
+        android:layout_width="10dp"
+        android:layout_height="15dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/payright_selector" />
+
+</LinearLayout>

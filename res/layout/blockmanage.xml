@@ -1,0 +1,2891 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_navigate"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/top_back_image"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/NavigateBack"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttonback_style"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="@string/title_return"
+            android:textColor="#ffffffff"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:orientation="vertical"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="vertical" >
+
+            <!-- 上海下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <TextView
+                    android:id="@+id/citySH"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_SH"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/citySHTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/SHANGHAITimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <!--
+                         <TextView
+                        android:id="@+id/citySHTextView"
+                        android:layout_width="50dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="0.7"
+                        android:gravity="center"
+                        android:hint="@string/btn_download"
+                        android:textColor="@color/listColor1"
+                        android:textSize="12dp"
+                        android:visibility="gone" />
+
+
+
+                    -->
+
+                    <ProgressBar
+                        android:id="@+id/citySHProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/citySHDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 北京下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_BJ"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_BJ"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityBJTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/BEIJINGTimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityBeiJingProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityBeiJingDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 天津下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_TianJin"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_TJ"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityTianJinTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/TIANJINGTimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityTianJinProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityTianJinDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 重庆下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_ChongQing"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_CQ"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityChongQingTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/CHONGQINGTimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityChongQingProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityChongQingDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 安徽下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_AnHui"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_AH"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityAnHuiTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/ANHUITimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityAnHuiProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityAnHuiDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 福建下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_FuJian"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_FJ"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityFuJianTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/FUJIANTimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityFuJianProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityFuJianDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+            <!-- 甘肃下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_GanSu"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_GS"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityGanSuTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/GANSUTimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityGanSuProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityGanSuDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 广东下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_GuangDong"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_GD"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityGuangDongTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/GUANGDONGTimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityGuangDongProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityGuangDongDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 广西下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_GuangXi"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_GX"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityGuangXiTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/GUANGXITimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityGuangXiProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityGuangXiDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 贵州下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_GuiZhou"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_GZ"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityGuiZhouTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/GUIZHOUTimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityGuiZhouProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityGuiZhouDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+            <!-- 海南下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_HaiNan"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_Hainan"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityHaiNanTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/HAINANTimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityHaiNanProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityHaiNanDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+            <!-- 河北下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_HeBei"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_HeBei"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityHeBeiTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/HEBEITimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityHeBeiProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityHeBeiDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 河南下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_HeNan"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_HeNan"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityHeNanTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/HENANTimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityHeNanProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityHeNanDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 黑龙江下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_HeiLongJiang"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_HLJ"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityHeiLongJiangTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/HEILONGJIANGTimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityHeiLongJiangProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityHeiLongJiangDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 湖北下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_HuBei"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_HuBei"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityHuBeiTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/HUBEITimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityHuBeiProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityHuBeiDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 湖南下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_HuNan"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_HuNan"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityHuNanTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/HUNANTimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityHuNanProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityHuNanDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 吉林下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_JiLing"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_JL"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityJiLingTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/JILINGTimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityJiLingProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityJiLingDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 江苏下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_JiangSu"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_JS"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityJiangSuTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/JIANGSUTimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityJiangSuProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityJiangSuDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 江西下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_JiangXi"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_JX"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityJiangXiTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/JIANGXITimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityJiangXiProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityJiangXiDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 辽宁下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_LiaoNing"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_LN"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityLiaoNingTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/LIAONINGTimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityLiaoNingProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityLiaoNingDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+            <!-- 内蒙古下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_NeiMengGu"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_NMG"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityNeiMengGuTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/NEIMENGGUTimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityNeiMengGuProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityNeiMengGuDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 宁夏下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_NingXia"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_NX"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityNingXiaTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/NINGXIATimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityNingXiaProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityNingXiaDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 青海下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_QingHai"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_QH"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityQingHaiTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/QINGHAITimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityQingHaiProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityQingHaiDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 山东下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_ShanDong"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_SD"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityShanDongTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/SHANDONGTimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityShanDongProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityShanDongDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 山西下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_ShanXi"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_SX"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityShanXiTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/SHANXITimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityShanXiProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityShanXiDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 陕西下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_ShaanXi"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_ShanXi"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityShaanXiTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/SHAANXITimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityShaanXiProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityShaanXiDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 四川下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_SiChuan"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_SiChuan"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/citySiChuanTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/SICHUANTimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/citySiChuanProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/citySiChuanDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 西藏下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_XiZang"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_XiZang"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/cityXiZangTextView"
+                        android:layout_width="50dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="0.7"
+                        android:gravity="center"
+                        android:hint="@string/btn_download"
+                        android:textColor="@color/listColor1"
+                        android:textSize="12dp"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/cityXiZangProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityXiZangDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 新疆下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_XinJiang"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_XinJiang"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityXinJiangTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/XINJIANGTimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityXinJiangProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityXinJiangDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+            <!-- 云南下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_YunNan"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_YunNan"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityYunNanTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/YUNNANTimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityYunNanProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityYunNanDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/solidline" />
+
+            <!-- 浙江下载 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/city_ZheJiang"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_ZheJiang"
+                    android:textColor="@color/listColor1"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/cityZheJiangTextView"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:hint="@string/btn_download"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/ZHEJIANGTimeTextView"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center"
+                            android:textColor="@color/listColor1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cityZheJiangProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.1"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/cityZheJiangDown"
+                    android:layout_width="7dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/list_citymap_load"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/listColor1"
+                    android:textSize="11dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

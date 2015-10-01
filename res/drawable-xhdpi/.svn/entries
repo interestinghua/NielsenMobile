@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="4"
+   name=""
+   committed-date="2013-08-16T09:26:35.047000Z"
+   url="https://server.lbschina.com.cn/svn/NielsenMobile/NielsenMobile/res/drawable-xhdpi"
+   last-author="mars.hua"
+   kind="dir"
+   uuid="039f8b3f-5bc3-314b-945d-d27fa8507d32"
+   repos="https://server.lbschina.com.cn/svn/NielsenMobile"
+   revision="4"/>
+<entry
+   committed-rev="4"
+   name="ic_launcher.png"
+   text-time="2013-08-16T09:35:28.000000Z"
+   committed-date="2013-08-16T09:26:35.047000Z"
+   checksum="b1f7efc9ec41a2911acc93a30c93a44e"
+   last-author="mars.hua"
+   kind="file"
+   prop-time="2013-08-16T09:35:28.000000Z"/>
+<entry
+   committed-rev="4"
+   name="ic_action_search.png"
+   text-time="2013-08-16T09:35:28.000000Z"
+   committed-date="2013-08-16T09:26:35.047000Z"
+   checksum="9dc5b1ddb445bf570c45ced34eaa187b"
+   last-author="mars.hua"
+   kind="file"
+   prop-time="2013-08-16T09:35:28.000000Z"/>
+</wc-entries>

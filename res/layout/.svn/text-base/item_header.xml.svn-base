@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_navigate"
+    android:layout_width="fill_parent"
+    android:layout_height="66px"
+    android:background="@drawable/top_back_image"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/NavigateBack"
+            android:layout_width="71px"
+            android:layout_height="45px"
+            android:background="@drawable/btn_back_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="4px"
+            android:text="返回"
+            android:textColor="#ffffffff"
+            android:textSize="13.5sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/NavigateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="57dp"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:text="@string/app_name"
+        android:textColor="#ffffffff"
+        android:textSize="18.0sp" />
+
+</RelativeLayout>

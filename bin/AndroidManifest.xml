@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://www.iteye.com/custom"
+    package="com.lbschina.srt"
+    android:versionCode="13"
+    android:versionName="2.5" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+
+    <application
+        android:name="com.lbschina.srt.App"
+        android:allowClearUserData="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="8d71cebd1e53f5c932a6e2e57e69f7e3" />
+
+        <activity
+            android:name="com.lbschina.hht.HHTCallActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:path="NielsenCallLbschina"
+                    android:scheme="NielsenCallLbschinaScheme" >
+                </data>
+            </intent-filter>
+        </activity>
+        <!-- NielsenCallLbschinaScheme://NielsenCallLbschina -->
+
+        <activity android:name=".activity.MainActivity" >
+        </activity>
+        <activity
+            android:name=".activity.ShowMapActivity"
+            android:screenOrientation="portrait" >
+             
+        </activity>
+        <activity
+            android:name="com.lbschina.hht.ShowInfoActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name=".activity.ValidationActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>          
+        </activity>
+        <activity
+            android:name=".activity.OfflineMapActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+        </activity>
+        <activity
+            android:name=".activity.ShowPointGridActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+        </activity>
+        <activity
+            android:name=".activity.ShowPointMapActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+        </activity>
+        <activity
+            android:name=".activity.BlockQueryActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+        </activity>
+        <activity
+            android:name=".activity.DataManageActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+        </activity>
+        <activity
+            android:name=".activity.ShowPointActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+        </activity>
+        <activity
+            android:name=".activity.AutoUpdateActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+        </activity>
+        <activity
+            android:name=".activity.BlockManageActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+        </activity>
+        <activity
+            android:name=".activity.SalesPointManageActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+        </activity>
+
+        <service android:name=".GpsService" >
+            <intent-filter>
+                <!-- 为该Service组件的intent-filter配置action -->
+                <action android:name="GpsService" />
+            </intent-filter>
+        </service>
+        
+        <service android:name="com.lbschina.service.GPSService" >
+        </service>
+        
+        <service
+            android:name="com.lbschina.dpn.NotificationService"
+            android:enabled="true"
+            android:label="NotificationService" >
+            <intent-filter>
+                <action android:name="org.androidpn.client.NotificationService" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

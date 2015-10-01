@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/NielsenMobile/!svn/ver/4/NielsenMobile/libs
+END
+mobilemap.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/NielsenMobile/!svn/ver/23/NielsenMobile/libs/mobilemap.jar
+END
+ksoap2-android-assembly-2.6.5-jar-with-dependencies.jar
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/NielsenMobile/!svn/ver/4/NielsenMobile/libs/ksoap2-android-assembly-2.6.5-jar-with-dependencies.jar
+END
+commons-httpclient.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/NielsenMobile/!svn/ver/23/NielsenMobile/libs/commons-httpclient.jar
+END
+MapApiSearch.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/NielsenMobile/!svn/ver/13/NielsenMobile/libs/MapApiSearch.jar
+END
+asmack.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/NielsenMobile/!svn/ver/31/NielsenMobile/libs/asmack.jar
+END
+MapApiLocation.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/NielsenMobile/!svn/ver/12/NielsenMobile/libs/MapApiLocation.jar
+END
+android-support-v4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/NielsenMobile/!svn/ver/23/NielsenMobile/libs/android-support-v4.jar
+END

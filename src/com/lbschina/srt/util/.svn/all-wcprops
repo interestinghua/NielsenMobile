@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/NielsenMobile/!svn/ver/23/NielsenMobile/src/com/lbschina/srt/util
+END
+FileDownloadThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/NielsenMobile/!svn/ver/23/NielsenMobile/src/com/lbschina/srt/util/FileDownloadThread.java
+END
+ChString.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/NielsenMobile/!svn/ver/23/NielsenMobile/src/com/lbschina/srt/util/ChString.java
+END
+LogUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/NielsenMobile/!svn/ver/23/NielsenMobile/src/com/lbschina/srt/util/LogUtils.java
+END
+XmlCreateUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/NielsenMobile/!svn/ver/23/NielsenMobile/src/com/lbschina/srt/util/XmlCreateUtil.java
+END
+LonLat2Distance.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/NielsenMobile/!svn/ver/23/NielsenMobile/src/com/lbschina/srt/util/LonLat2Distance.java
+END
+FileDownload.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/NielsenMobile/!svn/ver/23/NielsenMobile/src/com/lbschina/srt/util/FileDownload.java
+END
+NetUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/NielsenMobile/!svn/ver/23/NielsenMobile/src/com/lbschina/srt/util/NetUtils.java
+END
+ToastUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/NielsenMobile/!svn/ver/23/NielsenMobile/src/com/lbschina/srt/util/ToastUtil.java
+END
+PackageUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/NielsenMobile/!svn/ver/23/NielsenMobile/src/com/lbschina/srt/util/PackageUtil.java
+END
+AMapUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/NielsenMobile/!svn/ver/23/NielsenMobile/src/com/lbschina/srt/util/AMapUtil.java
+END
+Constants.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/NielsenMobile/!svn/ver/23/NielsenMobile/src/com/lbschina/srt/util/Constants.java
+END
